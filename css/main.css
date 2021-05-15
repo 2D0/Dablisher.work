@@ -1,0 +1,223 @@
+@charset "utf-8";
+body{
+    position:relative;
+}
+h1{
+    font-size:2em;
+    text-align:center;
+    background:rgba(165 48 12);
+    color:#fff;
+    padding:3% 0;
+
+}
+
+.tab_menu{
+    width:100%;
+}
+.tab_menu ul{}
+.tab_menu ul .tab_btn{
+    width:100%;
+    text-align:center;
+}
+.tab_menu input{
+    display:none;
+}
+.tab_menu ul .tab_btn label{
+    display:block;
+    width:100%;
+    font-size:1.3em;
+    padding:3% 0;
+    color:#fff;
+    overflow:hidden;
+    cursor:pointer;
+}
+
+/* 펜션버튼 디자인 */
+.tab_menu ul .tab_btn .tab1_btn{
+    background:rgba(235, 99, 95)
+}
+.tab_menu ul .tab_btn .tab2_btn{
+    background:rgba(224, 119, 115)
+}
+.tab_menu ul .tab_btn .tab3_btn{
+    background:rgba(218, 132, 129)
+}
+.tab_menu ul .tab_btn .tab4_btn{
+    background:rgba(223, 155, 152)
+}
+.tab_menu ul .tab_btn .tab5_btn{
+    background:rgba(228, 177, 174)
+}
+
+/* 기업버튼 디자인 */
+.tab_menu ul .tab_btn .tab6_btn{
+    background:rgba(38, 120, 228)
+}
+.tab_menu ul .tab_btn .tab7_btn{
+    background:rgba(68, 138, 231)
+}
+.tab_menu ul .tab_btn .tab8_btn{
+    background:rgba(84, 146, 226)
+}
+.tab_menu ul .tab_btn .tab9_btn{
+    background:rgba(103, 153, 218)
+}
+.tab_menu ul .tab_btn .tab10_btn{
+    background:rgba(127, 166, 218)
+}
+.tab_menu ul .tab_btn .tab11_btn{
+    background:rgba(144, 173, 211)
+}
+
+/* 모바일 및 포폴 디자인 */
+.tab_menu ul .tab_btn .tab12_btn{
+    background:rgba(230, 191, 66)
+}
+.tab_menu ul .tab_btn .tab13_btn{
+    background:rgba(228, 196, 93)
+}
+.tab_menu ul .tab_btn .tab14_btn{
+    background:rgba(233, 206, 116)
+}
+.tab_menu ul .tab_btn .tab15_btn{
+    background:rgba(235, 212, 137)
+}
+.tab_menu ul .tab_btn .tab16_btn{
+    background:rgba(235, 216, 156)
+}
+
+
+/* 탭 클릭시 라벨 디자인 */
+.tab_menu ul .tab_btn input:checked + .tab_click{
+
+}
+
+
+/* 컨텐츠 디자인 */
+.tab_menu ul .tab_btn .cont{
+    display:none;
+    padding:1% 0;
+    background:#ddd
+}
+.tab_menu ul .tab_btn .cont .go_now{
+    width:40%;
+    margin:0 auto;
+    margin-bottom:1%;
+}
+.tab_menu .pension .tab_btn .cont .go_now a{
+    background:#9e5050;
+}
+.tab_menu .pension .tab_btn .cont .go_now a:hover{
+    background:#8a3131;
+    transition:all .3s;
+}
+.tab_menu .company .tab_btn .cont .go_now a{
+    background:#506b9e;
+}
+.tab_menu .company .tab_btn .cont .go_now a:hover{
+    background:#2e4f8e;
+    transition:all .3s;
+}
+.tab_menu .mobile .tab_btn .cont .go_now a{
+    background:#fba637;
+}
+.tab_menu .mobile .tab_btn .cont .go_now a:hover {
+    background:#f1922d;
+    transition:all .3s;
+}
+.tab_menu ul .tab_btn .cont .go_now a{
+    width:100%;
+    padding:4% 0;
+    display:block;
+    color:#fff;
+    font-weight:bold;
+    border-radius:10px;
+    font-size:1.5em;
+}
+.tab_menu ul .tab_btn .cont .inner{
+    width: 40%;
+    padding:4% 3%;
+    margin:0 auto;
+    background:#fff;
+    text-align:left;
+}
+.tab_menu ul .tab_btn .cont .inner span{
+    display:block;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+
+
+/* 탭 클릭시 컨텐츠*/
+.tab_menu ul .tab_btn input:checked ~ .cont{
+    display:block;
+}
+
+
+/* 닫기 버튼 디자인 */
+.closer_btn{    
+    position:fixed;
+    top:0;
+    right:0;
+    display:inline-block;
+    width:50px;
+    height:50px;
+    background:rgb(112, 148, 105);
+    color:#fff;
+    cursor:pointer;
+}
+.closer_btn p{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+.closer_btn span{
+    display:block;
+    width:25px;
+    height:1px;
+    background:#fff;
+    text-indent:-9999px;
+}
+/* .closer_btn span:first-child{
+    transform:rotate(45deg)
+}
+.closer_btn span:last-child{
+    transform:rotate(-45deg)
+} */
+
+/* 닫기버튼 클릭시 디자인 */
+.tab_menu ul .tab_btn input:checked + .closer_click{
+
+}
+
+@media screen and (max-width:768px){
+    h1 {
+        font-size: 1.5em;
+    }
+}
+@media screen and (max-width:500px){
+    h1 {
+        font-size: 1.2em;
+        padding:4% 0;
+    }
+    .tab_menu ul .tab_btn .cont {
+        padding: 4% 0;
+    }
+
+    .tab_menu ul .tab_btn .cont .go_now {
+        width: 90%;
+    }
+    .tab_menu ul .tab_btn .cont .go_now a {
+        padding: 4% 0
+    }
+    .tab_menu ul .tab_btn .cont .inner{
+        width: 90%;
+    }
+    .tab_menu ul .tab_btn .cont .go_now {
+        width: 90%;}
+    .tab_menu ul .tab_btn .cont .go_now a {
+        padding: 4% 0
+    }
+}
