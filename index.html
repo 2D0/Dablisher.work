@@ -8,6 +8,22 @@
     <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
+    <!-- 클릭시 반짝이 모션 -->
+    <script src="https://cdn.jsdelivr.net/mojs/latest/mo.min.js"></script>
+    <script>
+        var first = new mojs.Shape({
+            shape:'circle', //동그라미
+            left:0, top:0, //위치
+            radius:{0:30}, //안쪽 동그라미 크기
+            fill:'none', //동그라미 색상
+            stroke:'#fff', //바깥 선 컬러
+            strokeWidth:{35:0}, //바깥 동그라미 선 굵기
+        });
+        document.addEventListener('click', function(e){
+            first.tune({x:e.pageX, y:e.pageY}).replay();
+        })
+    </script>
+    
     <div>
         <div class="top_title">
             <h1>이름을 클릭하시면 더 상세하게 보실 수 있습니다.</h1>
