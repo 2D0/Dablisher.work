@@ -6,6 +6,11 @@
     <title>다블리셔의 콩알작업ㅎ</title>
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <link href="css/animate.css" rel="stylesheet">
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script> new WOW().init(); </script>      
+    <script src="js/main.js"></script>
 </head>
 <body>
     <!-- 클릭시 반짝이 모션 -->
@@ -19,37 +24,41 @@
             stroke:'#fff', //바깥 선 컬러
             strokeWidth:{45:0}, //바깥 동그라미 선 굵기
         });
+        var second = new mojs.Shape({
+            shape:'circle',
+            parent:first.el,
+            radius:{0:50},
+            stroke:'#2d0',
+            strokeWidth:{20:0}
+        });
         document.addEventListener('click', function(e){
             first.tune({x:e.pageX, y:e.pageY}).replay();
         })
     </script>
     
     <div>
-        <div class="top_title">
+        <div class="top_title wow bounce">
             <h1>이름을 클릭하시면 더 상세하게 보실 수 있습니다.</h1>
         </div><!--top_title-->
 
     <div class="tab_menu">
         <ul class="pension">
-            <li class="tab_btn">
+            <li class="tab_btn wow bounceInLeft">
                 <input type="radio" name="tab" value="small" id="tab1_btn" checked>
                 <label for="tab1_btn" class="tab1_btn tab_click">펜션송</label>
                 <div class="cont">
                     <p class="go_now">
                         <a href="http://xn--sk4b8e144c.kr/" target="_blank">펜션송 바로가기</a>
-                        <p class="go_slide">
-                            펜션송 바로가기
-                        </p>
                     </p><!--go_now-->
                     <div class="inner">
                         <span>부분 : 메인 작업 (반응형)</span>
                         <span>기여도 : 100% 퍼블리싱</span>
-                        <span>스킬 : php, css 사용</span>
+                        <span>스킬 : php, css, jquery 사용</span>
                         <span>에디터 : editplus</span>
                     </div><!--inner-->
                 </div><!--cont-->
             </li><!--tab_btn-->
-            <li class="tab_btn">
+            <li class="tab_btn wow bounceInRight">
                 <input type="radio" name="tab" value="small" id="tab2_btn" checked>
                 <label for="tab2_btn" class="tab2_btn tab_click">운정쉼터펜션</label>
                 <div class="cont">
@@ -64,7 +73,7 @@
                     </div><!--inner-->
                 </div><!--cont-->
             </li> <!--tab_btn-->
-            <li class="tab_btn">
+            <li class="tab_btn wow bounceInLeft">
                 <input type="radio" name="tab" value="small" id="tab3_btn" checked>
                 <label for="tab3_btn" class="tab3_btn tab_click">미루펜션</label>
                 <div class="cont">
@@ -79,7 +88,7 @@
                     </div><!--inner-->
                 </div><!--cont-->
             </li> 
-            <li class="tab_btn">
+            <li class="tab_btn wow bounceInRight">
                 <input type="radio" name="tab" value="small" id="tab4_btn" checked>
                 <label for="tab4_btn" class="tab4_btn tab_click">물안개피는모래소펜션</label>
                 <div class="cont">
@@ -94,7 +103,7 @@
                     </div><!--inner-->
                 </div><!--cont-->
             </li> <!--tab_btn-->
-            <li class="tab_btn">
+            <li class="tab_btn wow bounceInLeft">
                 <input type="radio" name="tab" value="small" id="tab5_btn" checked>
                 <label for="tab5_btn" class="tab5_btn tab_click">자연과사람들펜션</label>
                 <div class="cont">
@@ -111,7 +120,7 @@
             </li> <!--tab_btn-->
         </ul><!--pension-->
         <ul class="company">
-            <li class="tab_btn">
+            <li class="tab_btn wow bounceInRight">
                 <input type="radio" name="tab" value="small" id="tab6_btn" checked>
                 <label for="tab6_btn" class="tab6_btn tab_click">덕원환경산업기술</label>
                 <div class="cont">
@@ -126,7 +135,7 @@
                     </div><!--inner-->
                 </div><!--cont-->
             </li> <!--tab_btn-->
-            <li class="tab_btn">
+            <li class="tab_btn wow bounceInLeft">
                 <input type="radio" name="tab" value="small" id="tab7_btn" checked>
                 <label for="tab7_btn" class="tab7_btn tab_click">동아측기사</label>
                 <div class="cont">
@@ -141,7 +150,7 @@
                     </div><!--inner-->
                 </div><!--cont-->
             </li> <!--tab_btn-->
-            <li class="tab_btn">
+            <li class="tab_btn wow bounceInRight">
                 <input type="radio" name="tab" value="small" id="tab8_btn" checked>
                 <label for="tab8_btn" class="tab8_btn tab_click">조이치과</label>
                 <div class="cont">
@@ -156,7 +165,7 @@
                     </div><!--inner-->
                 </div><!--cont-->
             </li> <!--tab_btn-->
-            <li class="tab_btn">
+            <li class="tab_btn wow bounceInLeft">
                 <input type="radio" name="tab" value="small" id="tab9_btn" checked>
                 <label for="tab9_btn" class="tab9_btn tab_click">홍익이엔아이</label>
                 <div class="cont">
@@ -171,7 +180,7 @@
                     </div><!--inner-->
                 </div><!--cont-->
             </li> <!--tab_btn-->
-            <li class="tab_btn">
+            <li class="tab_btn wow bounceInRight">
                 <input type="radio" name="tab" value="small" id="tab10_btn" checked>
                 <label for="tab10_btn" class="tab10_btn tab_click">영진금속</label>
                 <div class="cont">
@@ -186,7 +195,7 @@
                     </div><!--inner-->
                 </div><!--cont-->
             </li> <!--tab_btn-->
-            <li class="tab_btn">
+            <li class="tab_btn wow bounceInLeft">
                 <input type="radio" name="tab" value="small" id="tab11_btn" checked>
                 <label for="tab11_btn" class="tab11_btn tab_click">한국스포츠관광마케팅</label>
                 <div class="cont">
@@ -203,7 +212,7 @@
             </li> <!--tab_btn-->
         </ul><!--company-->
         <ul class="mobile">
-            <li class="tab_btn">
+            <li class="tab_btn wow bounceInRight">
                 <input type="radio" name="tab" value="small" id="tab12_btn" checked>
                 <label for="tab12_btn" class="tab12_btn tab_click">군산수상스포츠클럽</label>
                 <div class="cont">
@@ -219,7 +228,7 @@
                 </div><!--cont-->
             </li> <!--tab_btn-->
 
-            <li class="tab_btn">
+            <li class="tab_btn wow bounceInLeft">
                 <input type="radio" name="tab" value="small" id="tab13_btn" checked>
                 <label for="tab13_btn" class="tab13_btn tab_click">군산새만금국제마라톤대회</label>
                 <div class="cont">
@@ -234,7 +243,7 @@
                     </div><!--inner-->
                 </div><!--cont-->
             </li> <!--tab_btn-->
-            <li class="tab_btn">
+            <li class="tab_btn wow bounceInRight">
                 <input type="radio" name="tab" value="small" id="tab14_btn" checked>
                 <label for="tab14_btn" class="tab14_btn tab_click">군산새만금국제마라톤대회</label>
                 <div class="cont">
@@ -249,7 +258,7 @@
                     </div><!--inner-->
                 </div><!--cont-->
             </li> <!--tab_btn-->
-            <li class="tab_btn">
+            <li class="tab_btn wow bounceInLeft">
                 <input type="radio" name="tab" value="small" id="tab15_btn" checked>
                 <label for="tab15_btn" class="tab15_btn tab_click">2020포트폴리오</label>
                 <div class="cont">
@@ -273,9 +282,7 @@
         <input type="radio" name="tab" id="tab16_btn" class="close" checked>
         <label for="tab16_btn" class="closer_btn closer_click">
             <p>
-                <span>
-                    close
-                </span>
+                close
                 <!-- <span>close</span>
                 <span>close</span> -->
             </p>
