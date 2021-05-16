@@ -14,10 +14,10 @@
         var first = new mojs.Shape({
             shape:'circle', //동그라미
             left:0, top:0, //위치
-            radius:{0:30}, //안쪽 동그라미 크기
+            radius:{0:40}, //안쪽 동그라미 크기
             fill:'none', //동그라미 색상
             stroke:'#fff', //바깥 선 컬러
-            strokeWidth:{35:0}, //바깥 동그라미 선 굵기
+            strokeWidth:{45:0}, //바깥 동그라미 선 굵기
         });
         document.addEventListener('click', function(e){
             first.tune({x:e.pageX, y:e.pageY}).replay();
