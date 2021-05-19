@@ -8,8 +8,9 @@
     <link href="css/main.css" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <link href="css/animate.css" rel="stylesheet">
-    <script type="text/javascript" src="js/wow.min.js"></script>
-    <script> new WOW().init(); </script> 
+    <!-- AOS.js cdn -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <!-- 클릭시 반짝이 모션 -->
@@ -42,7 +43,7 @@
 
     <div class="tab_menu">
         <ul class="pension">
-            <li class="tab_btn wow bounceInLeft">
+            <li class="tab_btn" data-aos="slide-left" data-aos-duration="800">
                 <input type="radio" name="tab" value="small" id="tab1_btn" checked>
                 <label for="tab1_btn" class="tab1_btn tab_click">펜션송</label>
                 <div class="cont">
@@ -57,7 +58,7 @@
                     </div><!--inner-->
                 </div><!--cont-->
             </li><!--tab_btn-->
-            <li class="tab_btn wow bounceInRight">
+            <li class="tab_btn" data-aos="slide-right" data-aos-duration="800">
                 <input type="radio" name="tab" value="small" id="tab2_btn" checked>
                 <label for="tab2_btn" class="tab2_btn tab_click">운정쉼터펜션</label>
                 <div class="cont">
@@ -72,7 +73,7 @@
                     </div><!--inner-->
                 </div><!--cont-->
             </li> <!--tab_btn-->
-            <li class="tab_btn wow bounceInLeft">
+            <li class="tab_btn" data-aos="slide-left" data-aos-duration="800">
                 <input type="radio" name="tab" value="small" id="tab3_btn" checked>
                 <label for="tab3_btn" class="tab3_btn tab_click">미루펜션</label>
                 <div class="cont">
@@ -87,7 +88,7 @@
                     </div><!--inner-->
                 </div><!--cont-->
             </li> 
-            <li class="tab_btn wow bounceInRight">
+            <li class="tab_btn" data-aos="slide-right" data-aos-duration="800">
                 <input type="radio" name="tab" value="small" id="tab4_btn" checked>
                 <label for="tab4_btn" class="tab4_btn tab_click">물안개피는모래소펜션</label>
                 <div class="cont">
@@ -102,7 +103,7 @@
                     </div><!--inner-->
                 </div><!--cont-->
             </li> <!--tab_btn-->
-            <li class="tab_btn wow bounceInLeft">
+            <li class="tab_btn" data-aos="slide-left" data-aos-duration="800">
                 <input type="radio" name="tab" value="small" id="tab5_btn" checked>
                 <label for="tab5_btn" class="tab5_btn tab_click">자연과사람들펜션</label>
                 <div class="cont">
@@ -119,7 +120,7 @@
             </li> <!--tab_btn-->
         </ul><!--pension-->
         <ul class="company">
-            <li class="tab_btn wow bounceInRight">
+            <li class="tab_btn" data-aos="slide-right" data-aos-duration="800">
                 <input type="radio" name="tab" value="small" id="tab6_btn" checked>
                 <label for="tab6_btn" class="tab6_btn tab_click">덕원환경산업기술</label>
                 <div class="cont">
@@ -134,7 +135,7 @@
                     </div><!--inner-->
                 </div><!--cont-->
             </li> <!--tab_btn-->
-            <li class="tab_btn wow bounceInLeft">
+            <li class="tab_btn" data-aos="slide-left" data-aos-duration="800">
                 <input type="radio" name="tab" value="small" id="tab7_btn" checked>
                 <label for="tab7_btn" class="tab7_btn tab_click">동아측기사</label>
                 <div class="cont">
@@ -149,7 +150,7 @@
                     </div><!--inner-->
                 </div><!--cont-->
             </li> <!--tab_btn-->
-            <li class="tab_btn wow bounceInRight">
+            <li class="tab_btn" data-aos="slide-right" data-aos-duration="800">
                 <input type="radio" name="tab" value="small" id="tab8_btn" checked>
                 <label for="tab8_btn" class="tab8_btn tab_click">조이치과</label>
                 <div class="cont">
@@ -164,7 +165,7 @@
                     </div><!--inner-->
                 </div><!--cont-->
             </li> <!--tab_btn-->
-            <li class="tab_btn wow bounceInLeft">
+            <li class="tab_btn" data-aos="slide-left" data-aos-duration="800">
                 <input type="radio" name="tab" value="small" id="tab9_btn" checked>
                 <label for="tab9_btn" class="tab9_btn tab_click">홍익이엔아이</label>
                 <div class="cont">
@@ -179,7 +180,7 @@
                     </div><!--inner-->
                 </div><!--cont-->
             </li> <!--tab_btn-->
-            <li class="tab_btn wow bounceInRight">
+            <li class="tab_btn" data-aos="slide-right" data-aos-duration="800">
                 <input type="radio" name="tab" value="small" id="tab10_btn" checked>
                 <label for="tab10_btn" class="tab10_btn tab_click">영진금속</label>
                 <div class="cont">
@@ -194,7 +195,7 @@
                     </div><!--inner-->
                 </div><!--cont-->
             </li> <!--tab_btn-->
-            <li class="tab_btn wow bounceInLeft">
+            <li class="tab_btn" data-aos="slide-left" data-aos-duration="800">
                 <input type="radio" name="tab" value="small" id="tab11_btn" checked>
                 <label for="tab11_btn" class="tab11_btn tab_click">한국스포츠관광마케팅</label>
                 <div class="cont">
@@ -211,7 +212,7 @@
             </li> <!--tab_btn-->
         </ul><!--company-->
         <ul class="mobile">
-            <li class="tab_btn wow bounceInRight">
+            <li class="tab_btn" data-aos="slide-right" data-aos-duration="800">
                 <input type="radio" name="tab" value="small" id="tab12_btn" checked>
                 <label for="tab12_btn" class="tab12_btn tab_click">군산수상스포츠클럽</label>
                 <div class="cont">
@@ -227,7 +228,7 @@
                 </div><!--cont-->
             </li> <!--tab_btn-->
 
-            <li class="tab_btn wow bounceInLeft">
+            <li class="tab_btn" data-aos="slide-left" data-aos-duration="800">
                 <input type="radio" name="tab" value="small" id="tab13_btn" checked>
                 <label for="tab13_btn" class="tab13_btn tab_click">군산새만금국제마라톤대회</label>
                 <div class="cont">
@@ -242,7 +243,7 @@
                     </div><!--inner-->
                 </div><!--cont-->
             </li> <!--tab_btn-->
-            <li class="tab_btn wow bounceInRight">
+            <li class="tab_btn" data-aos="slide-right" data-aos-duration="800">
                 <input type="radio" name="tab" value="small" id="tab14_btn" checked>
                 <label for="tab14_btn" class="tab14_btn tab_click">군산새만금국제마라톤대회</label>
                 <div class="cont">
@@ -257,7 +258,7 @@
                     </div><!--inner-->
                 </div><!--cont-->
             </li> <!--tab_btn-->
-            <li class="tab_btn wow bounceInLeft">
+            <li class="tab_btn" data-aos="slide-left" data-aos-duration="800">
                 <input type="radio" name="tab" value="small" id="tab15_btn" checked>
                 <label for="tab15_btn" class="tab15_btn tab_click">2020포트폴리오</label>
                 <div class="cont">
@@ -287,5 +288,12 @@
             </p>
         </label><!--closer_btn closer_click-->
     </div>
+
+    <!-- AOS.js 시작 명령 -->
+<script>
+    AOS.init(
+
+    );
+  </script>
 </body>
 </html>
